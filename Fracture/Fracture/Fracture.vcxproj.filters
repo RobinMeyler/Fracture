@@ -13,30 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Tiles.h">
+      <UniqueIdentifier>{cbca1959-30f1-43c3-92bd-c4b7467b47e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tiles.cpp">
+      <UniqueIdentifier>{71548138-b3f0-4cf3-b845-76760248e215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens.h">
+      <UniqueIdentifier>{1a926593-b9b2-4594-90a1-084d9c402999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{60346895-4271-4510-a611-6fb9fa1d4e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Support">
+      <UniqueIdentifier>{ca3824a7-2bb6-4fe1-9087-85e08b44d2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Support.h">
+      <UniqueIdentifier>{1f7509b2-d15c-43a4-aa09-bb0b888a1c0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files\Tiles.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="WallTile.cpp">
+      <Filter>Source Files\Tiles.cpp</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Support</Filter>
     </ClCompile>
-    <ClCompile Include="Xbox360Controller.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Support</Filter>
     </ClCompile>
     <ClCompile Include="MyVector3.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Xbox360Controller.cpp">
+      <Filter>Source Files\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelOne.cpp">
+      <Filter>Source Files\Screens</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files\Tiles.h</Filter>
+    </ClInclude>
+    <ClInclude Include="WallTile.h">
+      <Filter>Header Files\Tiles.h</Filter>
+    </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Support.h</Filter>
     </ClInclude>
     <ClInclude Include="MyVector3.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Support.h</Filter>
     </ClInclude>
     <ClInclude Include="Xbox360Controller.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Support.h</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelOne.h">
+      <Filter>Header Files\Screens.h</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

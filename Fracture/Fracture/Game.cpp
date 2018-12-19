@@ -1,16 +1,22 @@
 #include "Game.h"
 
-
-
+// Contructor
 Game::Game():
-	m_renderWin{ sf::VideoMode{1200, 800, 1}, "Fracture"}
+	m_renderWin{ sf::VideoMode{768, 768, 1}, "Fracture"}
 {
+	
 }
 
+
+/// Destructor
 Game::~Game()
 {
 }
 
+
+// Loop designed to work at equal speed on all PCs
+// If a PC is slower, it will update the same amount of times
+// And render less often
 void Game::run()
 {
 	sf::Clock gameClock;											// Game clock
@@ -30,16 +36,18 @@ void Game::run()
 	}
 }
 
+
+// Process PC input
 void Game::processInput()
 {
 	sf::Event event;
 	while (m_renderWin.pollEvent(event))
 	{
-		if (sf::Event::Closed == event.type) // window message
+		if (sf::Event::Closed == event.type)
 		{
 			m_renderWin.close();
 		}
-		if (sf::Event::KeyPressed == event.type) //user key press
+		if (sf::Event::KeyPressed == event.type) 
 		{
 			if (sf::Keyboard::Escape == event.key.code)
 			{
@@ -58,18 +66,19 @@ void Game::processInput()
 	}
 }
 
-
+// Updates Game
 void Game::update(sf::Time t_deltaTime)
 {
 	m_gameControllerPad.update();
-
+	m_levelOne.update(t_deltaTime);
 }
 
+// Renders
 void Game::render()
 {
 	m_renderWin.clear();
 
-
+	m_levelOne.render(m_renderWin);
 
 	m_renderWin.display();
 }

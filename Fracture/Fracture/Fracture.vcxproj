@@ -20,13 +20,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="LevelOne.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyVector3.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="WallTile.cpp" />
     <ClCompile Include="Xbox360Controller.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="LevelOne.h" />
     <ClInclude Include="MyVector3.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="WallTile.h" />
     <ClInclude Include="Xbox360Controller.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

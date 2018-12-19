@@ -8,6 +8,9 @@
 
 #include "MyVector3.h"
 #include "Xbox360Controller.h"
+#include "WallTile.h"
+#include "LevelOne.h"
+
 
 class Game
 {
@@ -26,11 +29,9 @@ protected:
 	void render();
 
 
-
+	LevelOne m_levelOne;
 	sf::RenderWindow m_renderWin;
 	Xbox360Controller m_gameControllerPad;
-
-
-
+	
 };
 
