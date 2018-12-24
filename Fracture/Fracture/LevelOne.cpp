@@ -9,9 +9,9 @@ LevelOne::LevelOne()
 	sf::Texture b;
 	b.loadFromFile("tile2.png");
 
-	for (int i = 0; i < 24; i++)
+	for (int i = 0; i < mapHeight; i++)		// 24
 	{
-		for (int j = 0; j < 24; j++)
+		for (int j = 0; j < mapWidth; j++)			// 24
 		{
 			m_tileP[i][j].setPosition(sf::Vector2f{ (float)j * 32,(float)i * 32 });
 			if (game[i][j] == 1)
@@ -24,7 +24,6 @@ LevelOne::LevelOne()
 			}
 		}
 	}
-
 }
 
 
@@ -38,9 +37,9 @@ void LevelOne::update(sf::Time DT)
 
 void LevelOne::render(sf::RenderWindow &t_win)
 {
-	for (int i = 0; i < 24; i++)
+	for (int i = 0; i < mapHeight; i++)
 	{
-		for (int j = 0; j < 24; j++)
+		for (int j = 0; j < mapWidth; j++)
 		{
 			if (game[i][j] != 0)
 			{

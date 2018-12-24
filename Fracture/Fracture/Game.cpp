@@ -7,12 +7,10 @@ Game::Game():
 	
 }
 
-
 /// Destructor
 Game::~Game()
 {
 }
-
 
 // Loop designed to work at equal speed on all PCs
 // If a PC is slower, it will update the same amount of times

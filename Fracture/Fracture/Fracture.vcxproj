@@ -33,6 +33,7 @@
     <ClInclude Include="MyVector3.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="WallTile.h" />
+    <ClInclude Include="WorldData.h" />
     <ClInclude Include="Xbox360Controller.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

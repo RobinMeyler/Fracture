@@ -74,5 +74,8 @@
     <ClInclude Include="LevelOne.h">
       <Filter>Header Files\Screens.h</Filter>
     </ClInclude>
+    <ClInclude Include="WorldData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

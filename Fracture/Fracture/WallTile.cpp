@@ -4,15 +4,11 @@
 
 WallTile::WallTile()
 {
-	m_wallTexture.loadFromFile("block2.png");
-	m_wallTexture2.loadFromFile("block1.jpg");
-	m_wallSprite.setTexture(m_wallTexture);
+	
 }
 
 WallTile::WallTile(sf::Vector2f t_pos, sf::Texture const  & t_texture)
 {
-	m_wallTexture.loadFromFile("tile1.png");
-	m_wallSprite.setTexture(m_wallTexture);
 	m_wallSprite.setPosition(t_pos);
 }
 
@@ -23,13 +19,16 @@ WallTile::~WallTile()
 
 void WallTile::setTexture(int t_int)
 {
-	if (t_int == 1)
+	switch (t_int)
 	{
+	case 1:
+		m_wallTexture.loadFromFile("outBk.jpg");
 		m_wallSprite.setTexture(m_wallTexture);
-	}
-	else if (t_int == 2)
-	{
+		break;
+	case 2:
+		m_wallTexture2.loadFromFile("objectBK.png");
 		m_wallSprite.setTexture(m_wallTexture2);
+		break;
 	}
 }
 
