@@ -48,3 +48,23 @@ void LevelOne::render(sf::RenderWindow &t_win)
 		}
 	}
 }
+
+bool LevelOne::checkWallCollisiton(sf::Sprite & t_sprite)
+{
+	bool collide = false;
+	for (int i = 0; i < mapHeight; i++)
+	{
+		for (int j = 0; j < mapWidth; j++)
+		{
+			if (game[i][j] != 0)
+			{
+				collide = collision::isCollided(t_sprite, m_tileP[i][j].getSprite());
+				/*if (collide == true)
+				{
+					break;
+				}*/
+			}
+		}
+	}
+	return collide;
+}

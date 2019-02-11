@@ -5,12 +5,14 @@
 #include <iostream>
 #include "SFML/Graphics.hpp"
 #include "SFML/Audio.hpp"
+#include "collision.h"
 
 #include "MyVector3.h"
 #include "Xbox360Controller.h"
 #include "WallTile.h"
 #include "LevelOne.h"
 
+#include "Player.h"
 
 class Game
 {
@@ -28,7 +30,7 @@ protected:
 	void processInput();
 	void render();
 
-
+	Player m_player;
 	LevelOne m_levelOne;
 	sf::RenderWindow m_renderWin;
 	Xbox360Controller m_gameControllerPad;

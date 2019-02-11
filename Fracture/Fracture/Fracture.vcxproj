@@ -19,18 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="collision.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="LevelOne.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyVector3.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Tile.cpp" />
     <ClCompile Include="WallTile.cpp" />
     <ClCompile Include="Xbox360Controller.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="collision.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LevelOne.h" />
     <ClInclude Include="MyVector3.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="WallTile.h" />
     <ClInclude Include="WorldData.h" />

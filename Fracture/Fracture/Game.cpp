@@ -69,6 +69,8 @@ void Game::update(sf::Time t_deltaTime)
 {
 	m_gameControllerPad.update();
 	m_levelOne.update(t_deltaTime);
+	m_player.update(t_deltaTime);
+	m_levelOne.checkWallCollisiton(*m_player.getBody());
 }
 
 // Renders
@@ -77,7 +79,7 @@ void Game::render()
 	m_renderWin.clear();
 
 	m_levelOne.render(m_renderWin);
-
+	m_player.render(m_renderWin);
 	m_renderWin.display();
 }
 

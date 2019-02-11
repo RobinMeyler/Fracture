@@ -2,6 +2,7 @@
 #include "SFML/Graphics.hpp"
 #include "WallTile.h"
 #include "WorldData.h"
+#include "collision.h"
 
 class LevelOne
 {
@@ -10,6 +11,9 @@ public:
 	~LevelOne();
 	void update(sf::Time DT);
 	void render(sf::RenderWindow &t_win);
+
+	bool checkWallCollisiton(sf::Sprite & t_sprite);
+
 
 private:
 
